@@ -1,0 +1,22 @@
+@use "../../scss/abstracts" as abs;
+@use "../../scss/base" as bs;
+
+.button {
+  padding: 0.6em 2.4em;
+  border-radius: 3rem;
+  font-size: 1.6rem;
+  font-weight: 800;
+  font-family: abs.$font-family;
+  cursor: pointer;
+}
+
+.button-primary {
+  color: abs.$color-primary-400;
+  background-color: abs.$color-neutral-100;
+  transition: all linear 0.3s;
+
+  &:hover {
+    background-color: rgba(abs.$color-neutral-100, 0.9);
+    color: abs.$color-primary-200;
+  }
+}

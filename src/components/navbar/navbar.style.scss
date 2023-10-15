@@ -1,0 +1,50 @@
+@use "../../scss/abstracts" as abs;
+@use "../../scss/base" as bs;
+
+html {
+}
+
+.navbar {
+  // todo: change the color, temporary till set the interactive background
+  background-color: #18006d;
+
+  &__inner {
+    display: flex;
+    font-size: 1.8rem;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 700;
+    padding: 2rem;
+  }
+  &__logo {
+    background-color: abs.$color-primary-200;
+    color: abs.$color-neutral-100;
+    padding: 1rem;
+  }
+
+  .nav {
+    &__links {
+      display: flex;
+      gap: 1rem;
+    }
+    &__link-item {
+      padding: 1em;
+      color: abs.$color-neutral-100;
+      cursor: pointer;
+      transition: all linear 0.2s;
+
+      &:hover {
+        color: rgba(abs.$color-neutral-100, 0.85);
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 1rem;
+  }
+
+  @include abs.respond(phone) {
+    background-color: red;
+  }
+}

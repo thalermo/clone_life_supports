@@ -1,0 +1,6 @@
+@use "./scss/base";
+@use "./scss/abstracts" as abs;
+
+body {
+  font-family: abs.$font-family;
+}
